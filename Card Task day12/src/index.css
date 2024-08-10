@@ -22,9 +22,12 @@ body{
   margin: 0;
   background-color:  hsl(185, 75%, 39%);
   background-image: url(./assets/bg-pattern-top.svg), url(./assets/bg-pattern-bottom.svg);
-  background-position: bottom left, top right;
+  background-position-x: -400px, 650px ;
+  background-position-y: -600px, 250px;
   background-repeat: no-repeat;
-  background-size: 20%cover, 20%cover ;
+ 
+ 
+  
 }
 
 #root{
@@ -33,4 +36,14 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 375px) {
+body{
+  background-position-x: -780px, 150px ;
+  background-position-y: -500px, 220px;
+
+ 
+}
+
 }
